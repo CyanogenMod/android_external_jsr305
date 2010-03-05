@@ -4,6 +4,4 @@ License: BSD
 Description: "Annotations for Software Defect Detection." ie. @Nullable and friends
 Local Modifications: No local modifications
 
-This APIs in this library are not included on the device. They may, however, be
-included in test cases etc.
-
+This code is built as a static library.
