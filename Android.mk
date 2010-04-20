@@ -23,3 +23,12 @@ include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # Include this library in the build server's output directory
 $(call dist-for-goals, droid, $(LOCAL_BUILT_MODULE):jsr305.jar)
+
+# Also build a host side library
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := $(call all-java-files-under, ri/src/main/java)
+
+LOCAL_MODULE := jsr305lib
+
+include $(BUILD_HOST_JAVA_LIBRARY)
