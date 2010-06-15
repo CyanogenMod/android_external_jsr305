@@ -16,7 +16,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := jsr305
-LOCAL_SDK_VERSION := current
+LOCAL_SDK_VERSION := 8
 LOCAL_SRC_FILES := $(call all-java-files-under, ri/src/main/java)
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
