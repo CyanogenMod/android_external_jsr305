@@ -102,20 +102,12 @@ This annotation can be applied to the value() element of an annotation that
  Applications of the type qualifier with different values are exclusive, and
  the enumeration is an exhaustive list of the possible values.
  
-<<<<<<< .mine
- For example, the following defines a type qualifier such that if you know
- a value is neither &amp;#064;Foo(Color.Red) or &amp;#064;Foo(Color.Blue), then the value must be
- &amp;#064;Foo(Color.Green). And if you know it is &amp;#064;Foo(Color.Green), you know it cannot
- be &amp;#064;Foo(Color.Red) or &amp;#064;Foo(Color.Blue)
-  
-=======
  For example, the following defines a type qualifier such that if you know a
  value is neither @Foo(Color.Red) or @Foo(Color.Blue),
  then the value must be @Foo(Color.Green). And if you know it is
  @Foo(Color.Green), you know it cannot be
  @Foo(Color.Red) or @Foo(Color.Blue)
  
->>>>>>> .r47
  <code>
  &#064;TypeQualifier  @interface Foo {
      enum Color {RED, BLUE, GREEN};
